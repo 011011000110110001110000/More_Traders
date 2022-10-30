@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "more-traders",
+  "version": "${version}",
+  "name": "More Traders",
+  "description": "Makes wandering traders spawn 10 times as often compared to vanilla",
+  "authors": [
+    "Lollopollqo"
+  ],
+  "license": "MIT License",
+  "icon": "assets/more-traders/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "more.traders.MoreTraders"
+    ]
+  },
+  "mixins": [
+    "more-traders.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "~1.19.x",
+    "java": ">=17"
+  }
+}
