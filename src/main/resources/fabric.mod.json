@@ -7,6 +7,9 @@
   "authors": [
     "Lollopollqo"
   ],
+  "contact": {
+    "sources": "https://https://github.com/011011000110110001110000/More_Traders"
+  },
   "license": "MIT License",
   "icon": "assets/more-traders/icon.png",
   "environment": "*",
