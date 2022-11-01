@@ -25,7 +25,7 @@ public class IncreaseTraderChanceCommand {
     private static int setTraderSpawnOneInXChance(CommandSourceStack source, int successPercentage) {
         if (successPercentage > 0 && successPercentage <= 100) {
             MoreTraders.spawnSuccessPercentage = successPercentage;
-            source.sendSuccess(Component.translatable("Set the trader spawn attempt success percentage to " + successPercentage + "%"), false);
+            source.sendSuccess(Component.translatable("Set the trader spawn attempt success rate to " + successPercentage + "%"), false);
         } else source.sendFailure(Component.translatable("Insert a valid percentage \n(must be greater than 0 and at most 100)"));
         return Command.SINGLE_SUCCESS;
     }
