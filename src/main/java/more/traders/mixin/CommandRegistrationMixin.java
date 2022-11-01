@@ -24,7 +24,8 @@ public class CommandRegistrationMixin {
                     value = "INVOKE",
                     shift = At.Shift.BEFORE,
                     target = "Lcom/mojang/brigadier/CommandDispatcher;setConsumer(Lcom/mojang/brigadier/ResultConsumer;)V"
-            )
+            ),
+            remap = false
     )
     private void registerCommands (Commands.CommandSelection commandSelection, CommandBuildContext commandBuildContext, CallbackInfo ci) {
         IncreaseTraderChanceCommand.register(dispatcher);
