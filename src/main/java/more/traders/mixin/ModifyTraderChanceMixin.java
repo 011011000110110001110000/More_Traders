@@ -21,6 +21,6 @@ public class ModifyTraderChanceMixin {
             method = "spawn"
     )
     private int moreTraders$modifyTraderChance(RandomSource random, int bound) {
-        return random.nextIntBetweenInclusive(0, 100) <= MoreTraders.spawnSuccessPercentage ? 0 : 1;
+        return random.nextIntBetweenInclusive(1, 100) <= MoreTraders.spawnSuccessPercentage ? 0 : 1;
     }
 }
