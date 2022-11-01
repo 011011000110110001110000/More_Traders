@@ -1,7 +1,7 @@
 package more.traders.mixin;
 
 import com.mojang.brigadier.CommandDispatcher;
-import more.traders.command.IncreaseTraderChanceCommand;
+import more.traders.command.ModifyTraderChanceCommand;
 import net.minecraft.commands.CommandBuildContext;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -28,6 +28,6 @@ public class CommandRegistrationMixin {
             remap = false
     )
     private void registerCommands (Commands.CommandSelection commandSelection, CommandBuildContext commandBuildContext, CallbackInfo ci) {
-        IncreaseTraderChanceCommand.register(dispatcher);
+        ModifyTraderChanceCommand.register(dispatcher);
     }
 }

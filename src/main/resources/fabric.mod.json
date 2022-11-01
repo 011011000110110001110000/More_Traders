@@ -3,7 +3,7 @@
   "id": "more-traders",
   "version": "${version}",
   "name": "More Traders",
-  "description": "Makes wandering traders spawn 10 times as often compared to vanilla",
+  "description": "Simple mod that allows some customization of wandering trader spawn chance",
   "authors": [
     "Lollopollqo"
   ],

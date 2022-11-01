@@ -9,7 +9,7 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 
 
-public class IncreaseTraderChanceCommand {
+public class ModifyTraderChanceCommand {
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
