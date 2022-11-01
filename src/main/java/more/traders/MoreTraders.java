@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 public class MoreTraders implements ModInitializer {
     public static final String MOD_NAME = "More Traders";
-    public static final String MOD_VERSION = "1.0";
+    public static final String MOD_VERSION = "1.1";
     public static final String MOD_ID = "more-traders";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static int spawnSuccessPercentage = 10;  //default value is vanilla value (see WanderingTraderSpawner class)
