@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.List;
 
 @Mixin(WanderingTraderSpawner.class)
-public abstract class WanderingTraderSpawnerMixin {
+public abstract class SpawnTraderForEachPlayerMixin {
 
     @Shadow protected abstract boolean spawn(ServerLevel serverLevel);
 
@@ -31,7 +31,7 @@ public abstract class WanderingTraderSpawnerMixin {
     )
     private void moreTraders$getNonSpectatingPlayers(ServerLevel level, boolean spawnEnemies, boolean spawnFriendlies, CallbackInfoReturnable<Integer> cir) {
         currentPlayerIndex = 0;
-        players = level.getPlayers(serverPlayer -> (!serverPlayer.isSpectator() && !serverPlayer.isRemoved()));
+        players = level.getPlayers(serverPlayer -> (!serverPlayer.isSpectator() && serverPlayer.isAlive()));
     }
 
     @Redirect(
